@@ -102,7 +102,7 @@
 				root.rotation.z = .5 * Math.PI  // Need to apply this only on idleLeft
 
 				idleBack.tracks.splice(1, 1)
-				root.rotation.z = Math.PI  // Need to apply this only on idleLeft
+				root.rotation.z = -1 * Math.PI  // Need to apply this only on idleLeft
 				
 				// THREE.AnimationUtils.makeClipAdditive(idleRght) // <--- ???
 
@@ -232,8 +232,8 @@
 		to.play()
 		from.crossFadeTo(to, fSpeed, true)
 		setTimeout(function() {
-			from.enabled = true
-			to.crossFadeTo(from, tSpeed, true)
+			end.enabled = true
+			to.crossFadeTo(end, tSpeed, true)
 			currentlyAnimating = false
 			end.play()
 		}, to._clip.duration * 1000 - ((tSpeed + fSpeed) * 1000))
