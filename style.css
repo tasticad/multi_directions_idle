@@ -59,7 +59,7 @@ body {
   top: 25px;
   width: 50px;
   height: 50px;
-  background-color: #edfff7; /*#9bffaf #f5636c*/
+  background-color: gray;
   animation: flip 1s infinite;
 }
 
@@ -88,22 +88,21 @@ body {
 #ui {
 }
 #ui li {
-  background-color: #fffaed;
+  background-color: gray;
   width: 120px;
   text-align: center;
   list-style: none;
   display: inline-block;
   border-radius: 30px;
-  border: 1px solid #888888;
+  border: 1px solid gray;
   cursor: pointer;
   box-shadow: 8px 5px 0 #ccc;
   z-index: 100;
-  transition: background-color .2s ease, border .2s ease;
+  transition: background-color .2s ease;
 }
 #ui li:hover {
-  background-color: #edfff7;
-  border: 1px solid #383838;
-  transition: background-color .2s ease, border .2s ease;
+  background-color: lightgray;
+  transition: background-color .2s ease;
 }
 
 #ui h2 {

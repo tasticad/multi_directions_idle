@@ -53,7 +53,7 @@
 		// });
 
 		// Mats
-		const aviMat = new THREE.MeshBasicMaterial({ color: 'gray', skinning: true }) // 0x9bffaf 0xf5636c
+		const aviMat = new THREE.MeshPhongMaterial({ color: 'gray', skinning: true }) // 0x9bffaf 0xf5636c
 
 		// glTF loader
 		let loader = new THREE.GLTFLoader()
