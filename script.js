@@ -117,10 +117,10 @@
 				idle.play()
 
 			},
-			undefined, // We don't need this function
-			function(error) {
-				console.error(error)
-			}
+			// undefined, // We don't need this function
+			// function(error) {
+			// 	console.error(error)
+			// }
 		)
 
 		// Hemisphere light
